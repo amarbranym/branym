@@ -26,8 +26,6 @@
     }
 }
 
-
-
 .slide-track {
     /* animation: none; */
     /* Animation will be applied dynamically */
@@ -35,7 +33,7 @@
     overflow: hidden;
     white-space: nowrap;
     /* Ensure text doesn't wrap */
-    width: calc(250px * 10);
+    width: 200vw;
     animation: scroll 40s linear infinite;
 }
 
@@ -46,28 +44,28 @@
     overflow: hidden;
     white-space: nowrap;
     /* Ensure text doesn't wrap */
-    width: calc(250px * 10);
+    width: 200vw;
     animation: leftScroll 40s linear infinite;
 }
 
 /* Animation based on scroll position */
 @keyframes scroll {
     0% {
-        transform: translateX(calc(-250px * var(--scroll)));
+        transform: translateX(calc(-300px * var(--scroll)));
     }
 
     100% {
-        transform: translateX(calc(-250px * var(--scroll)));
+        transform: translateX(calc(-300px * var(--scroll)));
     }
 }
 
 /* Animation based on scroll position */
 @keyframes leftScroll {
     0% {
-        transform: translateX(calc(250px * var(--scroll)));
+        transform: translateX(calc(300px * var(--scroll)));
     }
 
     100% {
-        transform: translateX(calc(250px * var(--scroll)));
+        transform: translateX(calc(300px * var(--scroll)));
     }
 }

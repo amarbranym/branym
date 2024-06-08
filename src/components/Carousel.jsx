@@ -10,7 +10,7 @@ function Carousel({ data, leftToRight = false, className = '' }) {
     const scrollEventHandler = () => {
       const newPosition =
         window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-      setScrollPosition(newPosition)
+        setScrollPosition(newPosition)
     }
 
     window.addEventListener('scroll', scrollEventHandler)
@@ -21,21 +21,21 @@ function Carousel({ data, leftToRight = false, className = '' }) {
   }, [])
 
   return (
-    <div className={className}>
+    <div className={"" + className}>
       <div
         className={
           leftToRight
-            ? 'slide-track-left  text-white '
-            : 'slide-track  text-white '
+            ? 'slide-track-left  text-white'
+            : 'slide-track  text-white'
         }
         style={{
           '--scroll': scrollPosition,
         }}
       >
         {data.map((item) => (
-          <div class="slide p-4 ">
+          <div class="slide p-2 md:p-4">
             <h2
-              className={`font-calsans text-[80px] font-extrabold uppercase ${item.css} `}
+              className={`font-calsans text-[40px] md:text-[80px] font-extrabold uppercase ${item.css} `}
             >
               {item.text}
             </h2>

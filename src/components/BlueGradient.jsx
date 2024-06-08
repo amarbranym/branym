@@ -38,7 +38,7 @@ const BlueGradient = () => {
           gradientTransform="translate(891.203 749) scale(829.797 832.674)"
         >
           <stop stop-color="#0F51D2" />
-          <stop offset="1" stop-color="#3769EB" stop-opacity="0.05" />
+          <stop offset="1" stop-color="#3769EB" stop-opacity="0" />
         </radialGradient>
       </defs>
     </svg>

@@ -25,6 +25,7 @@ module.exports = {
       fontFamily: {
         sans: ['Product Sans', ...defaultTheme.fontFamily.sans],
         calsans: ['CalSans-SemiBold'],
+        Chloe: ['Chloe'],
         display: [
           ['Mona Sans', ...defaultTheme.fontFamily.sans],
           { fontVariationSettings: '"wdth" 125' },

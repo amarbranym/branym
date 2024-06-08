@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero_bg relative flex min-h-[40rem] overflow-hidden sm:h-screen sm:min-h-[60rem] ">
       <div className="z-[1]">
         <div className="absolute left-0  right-0 top-0  h-[400px] w-full bg-gradient-to-b from-black/70 to-black/0"></div>
-        <div className="transfrom absolute bottom-0  left-1/2  -translate-x-1/2 object-cover ">
+        <div className="transfrom  absolute bottom-0  left-1/2  -translate-x-1/2 object-cover  ">
           <BlueGradient />
         </div>
       </div>
@@ -22,12 +22,15 @@ const Hero = () => {
           </h2>
 
           <div className="absolute bottom-0 left-0 right-0 w-screen p-8">
-            <div className=" relative flex  w-full scale-75  items-center  justify-center text-white  md:scale-100">
+            {/* <div className=" relative flex  w-full scale-75  items-center  justify-center text-white  md:scale-100">
               <CurvedTextButton />
               <div className=" absolute left-1/2  -translate-x-1/2 cursor-pointer ">
                 <DownArrow />
               </div>
-            </div>
+            </div> */}
+            <CurvedTextButton text="more about us. more about us.">
+              <DownArrow />
+            </CurvedTextButton>
           </div>
         </Container>
       </div>
