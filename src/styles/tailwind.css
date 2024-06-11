@@ -1,11 +1,14 @@
 @import './base.css';
 @import './components.css';
 @import './utilities.css';
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "CalSans-SemiBold";
   src: url("../fonts/CalSans-SemiBold.ttf");
 }
+
 @font-face {
   font-family: "Chloe";
   src: url("../fonts/Chloe-Regular.otf");
@@ -33,19 +36,12 @@
   position: relative !important;
 }
 
-.mySwiperTab {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
 
 .mySwiperTab .swiper-slide {
   width: auto;
   height: 100%;
-  opacity: 0.4;
+  opacity: 1;
   /* background-color: red; */
-  padding: 20px 0;
 }
 
 .mySwiperTab .swiper-slide-thumb-active {
@@ -76,7 +72,8 @@
 }
 
 .gradient-text {
-  background: linear-gradient(315deg, #000000 0%, #646464 43%, #ebebeb 100%);
+  background: radial-gradient(white, #babdcd);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -153,7 +150,23 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
+
+
+
+@media screen and (min-width: 640px) {
+  .one-side-margin {
+    margin-left: calc(50vw - 40rem);
+  }
+  .one-side-width {
+    min-width: calc(50vw - 40rem);
+  }
 }

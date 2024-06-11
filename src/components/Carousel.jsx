@@ -29,7 +29,7 @@ function Carousel({ data, leftToRight = false, className = '' }) {
             : 'slide-track  text-white'
         }
         style={{
-          '--scroll': scrollPosition,
+          '--scroll': scrollPosition * 5,
         }}
       >
         {data.map((item) => (

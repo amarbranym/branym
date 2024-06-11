@@ -1,0 +1,23 @@
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+
+
+.horizontal-scroll-wrapper{
+  width:900px;
+  max-height:100vw;
+  margin:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+
+  background:#cab;
+  transform:rotate(90deg);
+  transform-origin: right top;
+} 
+
+
+

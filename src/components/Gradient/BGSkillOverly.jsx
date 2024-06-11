@@ -27,8 +27,8 @@ const BGSkillOverly = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(835 -266.984) scale(569.707 507.92)"
         >
-          <stop stop-color="white" stop-opacity="0.68" />
-          <stop offset="1" stop-color="white" stop-opacity="0.05" />
+          <stop stop-color="white" stop-opacity="0.9" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
         </radialGradient>
       </defs>
     </svg>

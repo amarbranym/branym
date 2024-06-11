@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
 import Skill from '@/components/sections/Skill'
 import Projects from '@/components/sections/Projects'
+import Work from '@/components/sections/Work'
 
 const page = () => {
   return (
@@ -11,7 +12,7 @@ const page = () => {
       <About/>
       <Skill/>
       <Projects/>
-      <div className='h-screen bg-blue-200'></div>
+      <Work/>
     </>
   )
 }
