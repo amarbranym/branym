@@ -7,8 +7,6 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
 import 'swiper/css/thumbs'
-import { Container } from './Container'
-import Image from 'next/image'
 import DubaleCots from './DubaleCots'
 import { clients } from '@/data/imageData'
 

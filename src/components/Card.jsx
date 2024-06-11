@@ -6,7 +6,7 @@ import CurvedTextButton from './CurvedTextButton'
 import DownArrow from './icons/DownArrow'
 const Card = () => {
   return (
-    <div className="max-w-2xl w-[42rem]  overflow-hidden rounded-lg   border-[0.5px] border-gray-500 ">
+    <div className="max-w-2xl sm:w-[42rem]  overflow-hidden rounded-lg   border-[0.5px] border-gray-500 ">
       <div className="cardGradient w-full ">
         <div className="flex w-full items-center justify-center px-4 py-10 md:px-0 md:py-16">
           <Image

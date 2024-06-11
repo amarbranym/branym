@@ -30,7 +30,7 @@
     /* animation: none; */
     /* Animation will be applied dynamically */
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     /* Ensure text doesn't wrap */
     width: 200vw;
@@ -41,7 +41,7 @@
     /* animation: none; */
     /* Animation will be applied dynamically */
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     /* Ensure text doesn't wrap */
     width: 200vw;
