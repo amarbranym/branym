@@ -15,13 +15,13 @@ const LetsTalk = () => {
         {/* ***** */}
         <Fade
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="100"
           class="col-span-2 row-span-4  flex items-center justify-center rounded-lg bg-[#18181A] p-4  sm:col-span-2  lg:col-span-4 lg:p-8"
         ></Fade>
         {/* ***** */}
         <Fade
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="150"
           class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
         >
           <div className=" relative flex  h-full flex-col justify-end">
@@ -43,7 +43,7 @@ const LetsTalk = () => {
         {/* **** */}
         <Fade
           data-aos="fade-up"
-          data-aos-delay="450"
+          data-aos-delay="200"
           class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
         >
           <div className=" relative flex h-full  w-full flex-col justify-end">
@@ -63,7 +63,7 @@ const LetsTalk = () => {
         {/* ***** */}
         <Fade
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="250"
           class="col-span-full rounded-lg bg-[#18181A] px-4 py-6   sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:px-8 lg:py-10"
         >
           <div className="flex h-full items-center justify-between text-white">

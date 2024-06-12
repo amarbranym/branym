@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container } from '../Container'
-import BlueGradient from '../BlueGradient'
-import CurvedTextButton from '../CurvedTextButton'
-import DownArrow from '../icons/DownArrow'
-import Fade from '../utils/Fade'
+import { Container } from '../../Container'
+import BlueGradient from '../../BlueGradient'
+import CurvedTextButton from '../../CurvedTextButton'
+import DownArrow from '../../icons/DownArrow'
+import Fade from '../../utils/Fade'
 
 const Hero = () => {
   return (
@@ -16,8 +16,7 @@ const Hero = () => {
       </div>
       <div className="z-[2] flex-1">
         <Container className="flex h-full items-center justify-center">
-          <Fade  data-aos="fade-up"
-            data-aos-duration="400">
+          <Fade data-aos="fade-up" data-aos-duration="400">
             <h1 className="-mt-16 text-center font-calsans text-[3.5rem] font-bold leading-tight  text-white  sm:text-[5.5rem] md:-mt-32 lg:text-[7.5rem]">
               Experience <br />
               that converts <br />

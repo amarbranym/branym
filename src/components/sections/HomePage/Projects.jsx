@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container } from '../Container'
-import GradientLine from '../Gradient/GradientLine'
-import HorizontalScrollCarousel from '../HorizontalScrollCarousel'
-import MobileHorizontalScrollCarousel from '../MobileHorizontalScrollCarousel'
+import { Container } from '../../Container'
+import GradientLine from '../../Gradient/GradientLine'
+import HorizontalScrollCarousel from '../../HorizontalScrollCarousel'
+import MobileHorizontalScrollCarousel from '../../MobileHorizontalScrollCarousel'
 
 const Projects = () => {
   return (

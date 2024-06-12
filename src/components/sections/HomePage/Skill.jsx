@@ -1,17 +1,17 @@
 'use client'
 import React from 'react'
-import BGSkillOverly from '../Gradient/BGSkillOverly'
-import { Container } from '../Container'
-import GradientLine from '../Gradient/GradientLine'
-import Fade from '../utils/Fade'
+import BGSkillOverly from '../../Gradient/BGSkillOverly'
+import { Container } from '../../Container'
+import GradientLine from '../../Gradient/GradientLine'
+import Fade from '../../utils/Fade'
 import Vector_left_1 from '@/images/skill/Vector_left_1.png'
 import Vector_left_2 from '@/images/skill/Vector_left_2.png'
 import Vector_right_1 from '@/images/skill/Vector_right_1.png'
 import Vector_right_2 from '@/images/skill/Vector_right_2.png'
 import GroupImage from '@/images/skill/GroupImage.png'
-import SkillBox from '../SkillBox'
+import SkillBox from '../../SkillBox'
 import Image from 'next/image'
-import StrokeButton from '../StrokeButton'
+import StrokeButton from '../../StrokeButton'
 const Skill = () => {
   return (
     <div className=" relative  overflow-hidden">
@@ -67,13 +67,14 @@ const Skill = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:block">
+          <Fade data-aos="zoom"
+          data-aos-delay="100"  className="hidden lg:block">
             <Image
               src={GroupImage}
               alt="group"
               className="scale-74 md:scale-100"
             />
-          </div>
+          </Fade>
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-4">
               <Image

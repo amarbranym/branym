@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '@/components/sections/Hero'
-import About from '@/components/sections/About'
-import Skill from '@/components/sections/Skill'
-import Projects from '@/components/sections/Projects'
-import Work from '@/components/sections/Work'
+import Hero from '@/components/sections/HomePage/Hero'
+import About from '@/components/sections/HomePage/About'
+import Skill from '@/components/sections/HomePage/Skill'
+import Projects from '@/components/sections/HomePage/Projects'
+import Work from '@/components/sections/HomePage/Work'
 
 const page = () => {
   return (

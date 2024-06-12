@@ -1,7 +1,7 @@
 import React from 'react'
-import MyClient from '../MyClient'
-import { Container } from '../Container'
-import Fade from '../utils/Fade'
+import MyClient from '../../MyClient'
+import { Container } from '../../Container'
+import Fade from '../../utils/Fade'
 
 const Work = () => {
   return (

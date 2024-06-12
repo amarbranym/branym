@@ -1,12 +1,12 @@
 import React from 'react'
-import Carousel from '../Carousel'
+import Carousel from '../../Carousel'
 import { CarouselText, CarouselText2 } from '@/data/imageData'
-import { Container } from '../Container'
-import ArrowIcon from '../icons/ArrowIcon'
-import Fade from '../utils/Fade'
+import { Container } from '../../Container'
+import ArrowIcon from '../../icons/ArrowIcon'
+import Fade from '../../utils/Fade'
 const About = () => {
-  return (
-    <div className="aboutw-full overflow-hidden ">
+  return (  
+    <div className="about w-full overflow-hidden ">
       <div className="mx-auto flex justify-center">
         <div className="mt-2 lg:mt-6">
           <div>
