@@ -6,7 +6,7 @@ import CurvedTextButton from './CurvedTextButton'
 import DownArrow from './icons/DownArrow'
 const Card = () => {
   return (
-    <div className="max-w-2xl sm:w-[42rem]  overflow-hidden rounded-lg   border-[0.5px] border-gray-500 ">
+    <div className="max-w-2xl overflow-hidden  rounded-lg border-[0.5px]   border-gray-500 sm:w-[30rem] lg:w-[35rem] xl:w-[42rem] ">
       <div className="cardGradient w-full ">
         <div className="flex w-full items-center justify-center px-4 py-10 md:px-0 md:py-16">
           <Image
@@ -35,7 +35,7 @@ const Card = () => {
             graphic design
           </span>
         </div>
-        <div className="text-white mt-6">
+        <div className="mt-6 text-white">
           <p className="text-[1rem] font-light">
             A short description explaining the solution for a pain point related
             to QSR . Ideally this will be an animated event. The next options
@@ -44,8 +44,8 @@ const Card = () => {
           </p>
         </div>
         <div className=" my-6 flex items-center justify-between gap-2">
-          <div>
-            <h2 className="text-7xl font-bold text-white font-Chloe ">01</h2>
+          <div className="flex h-[100px] w-[100px] items-center justify-center">
+            <h2 className="font-Chloe text-7xl font-bold text-white ">01</h2>
           </div>
           <div className=" w-[60%]">
             <hr />

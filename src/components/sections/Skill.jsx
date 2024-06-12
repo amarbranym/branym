@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
 import BGSkillOverly from '../Gradient/BGSkillOverly'
 import { Container } from '../Container'
 import GradientLine from '../Gradient/GradientLine'
-
+import Fade from '../utils/Fade'
 import Vector_left_1 from '@/images/skill/Vector_left_1.png'
 import Vector_left_2 from '@/images/skill/Vector_left_2.png'
 import Vector_right_1 from '@/images/skill/Vector_right_1.png'
@@ -27,7 +28,11 @@ const Skill = () => {
             you to conquer the market.
           </h2>
         </div>
-        <div className=" grid grid-cols-1 items-center justify-items-center gap-8  text-white sm:grid-cols-2 lg:grid-cols-3">
+        <Fade
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className=" grid grid-cols-1 items-center justify-items-center gap-8  text-white sm:grid-cols-2 lg:grid-cols-3"
+        >
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-4 ">
               <SkillBox text="Resource Planning" />
@@ -103,7 +108,7 @@ const Skill = () => {
               <SkillBox text="Maintenance & Support" />{' '}
             </div>
           </div>
-        </div>
+        </Fade>
         <div className="py-14 text-center">
           <StrokeButton>Book a Free Call Now</StrokeButton>
         </div>

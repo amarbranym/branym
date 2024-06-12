@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef, useState, useEffect } from 'react'
 import Card from './Card'
+import Fade from './utils/Fade'
 
 const HorizontalScrollCarousel = () => {
   const [totalCards, setNoOfCards] = useState(0)
@@ -28,7 +29,7 @@ const HorizontalScrollCarousel = () => {
           <div className="flex items-center px-3">
             <div className="one-side-width h-4"></div>
             {[...Array(totalCards)].map((_, index) => (
-              <CardWrapper key={index}>
+              <CardWrapper key={index} index={index}>
                 <Card />
               </CardWrapper>
             ))}
@@ -42,8 +43,12 @@ const HorizontalScrollCarousel = () => {
   )
 }
 
-const CardWrapper = ({ children }) => {
-  return <div className="flex-none px-3">{children}</div>
+const CardWrapper = ({ children, index }) => {
+  return (
+    <Fade data-aos="fade-up" data-aos-delay={`${(index + 2) * 100}`} className="flex-none px-3">
+      {children}
+    </Fade>
+  )
 }
 
 export default HorizontalScrollCarousel

@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
 import ArrowIcon from './icons/ArrowIcon'
+import Fade from './utils/Fade'
 
 const LetsTalk = () => {
   return (
@@ -11,12 +13,17 @@ const LetsTalk = () => {
       </div>
       <div class=" my-14 grid grid-cols-2 grid-rows-4 gap-3 font-calsans sm:gap-4 lg:grid-cols-8">
         {/* ***** */}
-
-        <div class="col-span-2 row-span-4  flex items-center justify-center rounded-lg bg-[#18181A] p-4  sm:col-span-2  lg:col-span-4 lg:p-8"></div>
-
+        <Fade
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="col-span-2 row-span-4  flex items-center justify-center rounded-lg bg-[#18181A] p-4  sm:col-span-2  lg:col-span-4 lg:p-8"
+        ></Fade>
         {/* ***** */}
-
-        <div class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 ">
+        <Fade
+          data-aos="fade-up"
+          data-aos-delay="500"
+          class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
+        >
           <div className=" relative flex  h-full flex-col justify-end">
             <div className=" absolute right-0 top-0">
               <ArrowIcon className="h-6 w-6 text-[#D9D9D9]" />
@@ -31,12 +38,15 @@ const LetsTalk = () => {
               </p>
             </div>
           </div>
-        </div>
+        </Fade>
 
         {/* **** */}
-
-        <div class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 ">
-          <div className=" relative flex w-full  h-full flex-col justify-end">
+        <Fade
+          data-aos="fade-up"
+          data-aos-delay="450"
+          class="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
+        >
+          <div className=" relative flex h-full  w-full flex-col justify-end">
             <div className=" absolute right-0 top-0">
               <ArrowIcon className="h-6 w-6 text-[#D9D9D9]" />
             </div>
@@ -49,10 +59,13 @@ const LetsTalk = () => {
               </p>
             </div>
           </div>
-        </div>
-
+        </Fade>
         {/* ***** */}
-        <div class="col-span-full rounded-lg bg-[#18181A] px-4 py-6   sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:px-8 lg:py-10">
+        <Fade
+          data-aos="fade-up"
+          data-aos-delay="500"
+          class="col-span-full rounded-lg bg-[#18181A] px-4 py-6   sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:px-8 lg:py-10"
+        >
           <div className="flex h-full items-center justify-between text-white">
             <div className="flex flex-col justify-end px-2 py-4 lg:p-0">
               <h3 className="font-calsans text-3xl lg:text-5xl">
@@ -65,7 +78,7 @@ const LetsTalk = () => {
             </div>
             <div className="h-[100px]  w-[100px] rounded-[2rem] border border-white"></div>
           </div>
-        </div>
+        </Fade>
       </div>
     </div>
   )
