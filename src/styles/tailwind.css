@@ -1,9 +1,11 @@
 @import './base.css';
 @import './components.css';
 @import './utilities.css';
+
 html {
   scroll-behavior: smooth;
 }
+
 @font-face {
   font-family: "CalSans-SemiBold";
   src: url("../fonts/CalSans-SemiBold.ttf");
@@ -69,6 +71,18 @@ html {
   background: -webkit-linear-gradient(360deg, hsla(245, 81%, 51%, 1) 0%, hsla(246, 65%, 9%, 1) 100%);
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2C1CE7", endColorstr="#0B0826", GradientType=1);
+}
+
+.blutGradientin {
+  background: hsla(220, 87%, 44%, 1);
+
+  background: radial-gradient(circle, hsla(220, 87%, 44%, 1) 2%, hsla(0, 0%, 0%, 1) 100%);
+
+  background: -moz-radial-gradient(circle, hsla(220, 87%, 44%, 1) 2%, hsla(0, 0%, 0%, 1) 100%);
+
+  background: -webkit-radial-gradient(circle, hsla(220, 87%, 44%, 1) 2%, hsla(0, 0%, 0%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0F51D2", endColorstr="#000000", GradientType=1);
 }
 
 .gradient-text {
@@ -166,6 +180,7 @@ html {
   .one-side-margin {
     margin-left: calc(50vw - 40rem);
   }
+
   .one-side-width {
     min-width: calc(50vw - 40rem);
   }
