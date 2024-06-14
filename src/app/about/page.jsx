@@ -1,6 +1,6 @@
-import Hero from '@/components/sections/AboutPage/Hero'
-import OurProjects from '@/components/sections/AboutPage/OurProjects'
-import Skills from '@/components/sections/AboutPage/Skills'
+import Hero from '@/utils/sections/about/AboutHero'
+import OurProjects from '@/utils/sections/about/OurProjects'
+import Skills from '@/utils/sections/about/Skills'
 import React from 'react'
 
 const page = () => {

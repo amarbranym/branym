@@ -1,4 +1,4 @@
-import  RootLayout  from '@/components/RootLayout'
+import RootLayout from '@/utils/components/ui/elements/RootLayout'
 import { Analytics } from '@vercel/analytics/react'
 import '@/styles/tailwind.css'
 
