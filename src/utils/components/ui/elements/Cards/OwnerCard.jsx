@@ -1,5 +1,5 @@
 import React from 'react'
-import Yuvraj from '@/images/yuvraj.png'
+import Yuvraj from '../../../../../images/Yuvraj.png'
 import Image from 'next/image'
 import Linkdin from '../../icons/Social/Linkdin'
 import Instagram from '../../icons/Social/Instagram'
