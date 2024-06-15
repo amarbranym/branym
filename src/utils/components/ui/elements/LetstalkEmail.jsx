@@ -9,7 +9,7 @@ const LetstalkEmail = () => {
             <ArrowIcon className="h-6 w-6 text-[#D9D9D9]" />
           </div>
           <div className="px-3 pt-12 lg:p-0">
-            <span className=" text-md font-calsans uppercase  text-white ">
+            <span className=" text-sm font-calsans uppercase  text-white ">
               Email us
             </span>{' '}
             <p className=" font-calsans text-2xl font-extrabold text-white">

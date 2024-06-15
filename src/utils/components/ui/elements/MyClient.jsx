@@ -44,7 +44,7 @@ const MyClient = () => {
 
   console.log('active', activeIndex)
   return (
-    <div className=" rounded-md  bg-gradient-to-r from-[#18181A] to-[#0F0F10]">
+    <div className=" rounded-2xl  bg-gradient-to-r from-[#18181A] to-[#0F0F10]">
       <Swiper
         onSwiper={setThumbsSwiper}
         // loop={true}

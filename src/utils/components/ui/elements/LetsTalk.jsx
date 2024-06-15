@@ -17,14 +17,14 @@ const LetsTalk = () => {
         <Fade
           data-aos="fade-up"
           data-aos-delay="100"
-          className="col-span-2 row-span-4  flex items-center justify-center rounded-lg bg-[#18181A] p-4  sm:col-span-2  lg:col-span-4 lg:p-8"
+          className="col-span-2 row-span-4  flex items-center justify-center rounded-2xl bg-[#18181A] p-4  sm:col-span-2  lg:col-span-4 lg:p-8"
         >
           <LetsTalkForm />
         </Fade>
         <Fade
           data-aos="fade-up"
           data-aos-delay="150"
-          className="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
+          className="col-span-2 rounded-2xl bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
         >
           <LetstalkEmail />
         </Fade>
@@ -32,14 +32,14 @@ const LetsTalk = () => {
         <Fade
           data-aos="fade-up"
           data-aos-delay="200"
-          className="col-span-2 rounded-lg bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
+          className="col-span-2 rounded-2xl bg-[#18181A] px-4 py-6 sm:col-span-1   lg:col-span-2 lg:row-span-2 lg:h-[15rem] lg:py-8 xl:px-8 "
         >
           <LetsTalkCall />
         </Fade>
         <Fade
           data-aos="fade-up"
           data-aos-delay="250"
-          className="col-span-full rounded-lg bg-[#18181A] px-4 py-6   sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:px-8 lg:py-10"
+          className="col-span-full rounded-2xl bg-[#18181A] px-4 py-6   sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:px-8 lg:py-10"
         >
           <LetsTalkBook />
         </Fade>

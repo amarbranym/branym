@@ -22,7 +22,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="50"
-            className="  col-span-2 flex  items-center justify-center rounded-lg bg-[#18181A] px-4 py-12 sm:col-span-5 sm:row-span-2 sm:px-6 lg:p-16 xl:col-span-6 xl:h-[25rem]"
+            className="  col-span-2 flex  items-center justify-center rounded-2xl bg-[#18181A] px-4 py-12 sm:col-span-5 sm:row-span-2 sm:px-6 lg:p-16 xl:col-span-6 xl:h-[25rem]"
           >
             <div className="  ">
               <h2 className="gradient-text text-xl font-semibold uppercase">
@@ -41,7 +41,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="100"
-            className=" aspect-square rounded-lg   bg-[#18181A] p-4 sm:col-span-3 sm:aspect-auto sm:p-6 lg:px-8 xl:col-span-2"
+            className=" aspect-square rounded-2xl   bg-[#18181A] p-4 sm:col-span-3 sm:aspect-auto sm:p-6 lg:px-8 xl:col-span-2"
           >
             <div className="flex h-full items-end">
               <div>
@@ -57,7 +57,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="150"
-            className=" aspect-square rounded-lg bg-[#18181A] p-4 sm:col-span-3 sm:aspect-auto sm:p-6 xl:col-span-2 xl:px-10 xl:py-10"
+            className=" aspect-square rounded-2xl bg-[#18181A] p-4 sm:col-span-3 sm:aspect-auto sm:p-6 xl:col-span-2 xl:px-10 xl:py-10"
           >
             <div className=" relative h-full">
               <div className=" absolute right-0 top-0">
@@ -78,7 +78,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="200"
-            className="aspect-square rounded-lg bg-[#18181A] p-4  sm:col-span-2 sm:p-6 xl:col-span-2 xl:px-10 xl:py-12"
+            className="aspect-square rounded-2xl bg-[#18181A] p-4  sm:col-span-2 sm:p-6 xl:col-span-2 xl:px-10 xl:py-12"
           >
             <div className="flex h-full items-end">
               <div>
@@ -94,7 +94,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="250"
-            className="aspect-square rounded-lg bg-[#18181A] p-4 sm:col-span-2 sm:p-6 xl:col-span-2 xl:px-10 xl:py-12"
+            className="aspect-square rounded-2xl bg-[#18181A] p-4 sm:col-span-2 sm:p-6 xl:col-span-2 xl:px-10 xl:py-12"
           >
             <div className="flex h-full items-end">
               <div>
@@ -110,7 +110,7 @@ const About = () => {
           <Fade
             data-aos="fade-up"
             data-aos-delay="350"
-            className="  col-span-2 rounded-lg bg-[#EE1153] p-4 sm:col-span-4 sm:px-6 lg:p-8 xl:px-10 xl:py-12"
+            className="  col-span-2 rounded-2xl bg-[#EE1153] p-4 sm:col-span-4 sm:px-6 lg:p-8 xl:px-10 xl:py-12"
           >
             <div className="relative h-full  translate-y-1 pt-12 sm:pt-0 ">
               <div className=" absolute right-0 top-0">

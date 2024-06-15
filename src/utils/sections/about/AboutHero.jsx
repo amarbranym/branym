@@ -3,6 +3,7 @@ import { Container } from '../../components/ui/elements/Container'
 import BlueGradient from '../../components/ui/gradients/BlueGradient'
 import WhoWeAre from '@/utils/components/ui/icons/WhoWeAre'
 import StrokeButton from '@/utils/components/ui/buttons/StrokeButton'
+import PlayIcon from '@/utils/components/ui/icons/PlayIcon'
 
 const Hero = () => {
   return (
@@ -25,10 +26,10 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className=" pt-10 pb-20  w-full">
+      <section className=" w-full pb-20  pt-10">
         <Container className="">
-          <div className="  font-sans text-7xl font-semibold ">
-            <p className="text-center text-white">
+          <div className="   text-7xl font-semibold ">
+            <p className="text-center text-white font-calsans ">
               We are a design agency based in India. We’ve worked with 20+
               clients over 5 years and delivering{' '}
               <span className="text-[#FF720D]"> tailor-made solutions </span>{' '}
@@ -36,9 +37,14 @@ const Hero = () => {
               committed to pushing the boundaries of creativity and innovation.
             </p>
           </div>
-          <div className=" mt-20 relative   h-[673px] w-full rounded-[48px] border-4 border-gray-500  bg-gradient-to-r from-[#18181A] to-[#0F0F10]">
+          <div className=" relative mt-20   h-[673px] w-full rounded-[48px] border-4 border-gray-500  bg-gradient-to-r from-[#18181A] to-[#0F0F10]">
             <div className=" absolute bottom-8 left-4 ">
-              <StrokeButton>Watch Video</StrokeButton>
+              <StrokeButton className="flex items-center gap-2 ">
+                <div>
+                  <PlayIcon className="h-4 w-4" />
+                </div>
+                <span>Watch Video </span>
+              </StrokeButton>
             </div>
           </div>
         </Container>

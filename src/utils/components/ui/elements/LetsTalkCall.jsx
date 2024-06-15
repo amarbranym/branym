@@ -9,7 +9,7 @@ const LetsTalkCall = () => {
           <ArrowIcon className="h-6 w-6 text-[#D9D9D9]" />
         </div>
         <div className="px-3 pt-12 lg:p-0">
-          <span className=" text-md font-calsans uppercase  text-white ">
+          <span className=" text-sm font-calsans uppercase  text-white ">
             Give Us a Call
           </span>{' '}
           <p className=" font-calsans font-extrabold text-white md:text-2xl lg:text-xl xl:text-2xl">
