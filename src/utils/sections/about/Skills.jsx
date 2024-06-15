@@ -19,7 +19,7 @@ const Skills = () => {
       </div>
       <Container className="py-20">
         <div>
-          <h2 className=" font-calsans text-6xl font-semibold text-white">
+          <h2 className=" font-calsans text-4xl lg:text-6xl font-semibold text-white">
             Our mission is to provide customer-centric, result-oriented
             innovative IT Solutions across the globe.
           </h2>

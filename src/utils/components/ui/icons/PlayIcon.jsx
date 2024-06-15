@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PlayIcon = ({className}) => {
+const PlayIcon = ({ className }) => {
   return (
     <svg
       width="19"
@@ -8,6 +8,7 @@ const PlayIcon = ({className}) => {
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M18.6841 9.5L4.67107 17.5904L4.67107 1.40958L18.6841 9.5Z"

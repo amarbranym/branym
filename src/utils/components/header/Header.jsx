@@ -7,7 +7,7 @@ import { Container } from '../ui/elements/Container'
 
 const Header = () => {
   return (
-    <header className=" fixed min-w-[22.5rem] left-0 top-0 py-6 z-50 w-screen ">
+    <header className="fixed min-w-[22.5rem] left-0 right-0 top-0 py-6 z-50 w-full">
       <Container>
         <div className="flex h-[72px] items-center gap-4">
           <div className="flex h-[72px] backdrop-blur-lg w-[72px] min-w-[72px] cursor-pointer items-center justify-center rounded-full border border-white">

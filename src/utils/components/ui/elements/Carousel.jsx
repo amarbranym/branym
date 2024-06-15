@@ -1,16 +1,21 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import '@/styles/carousel.css'
 
 function Carousel({ data, leftToRight = false, className = '' }) {
   const [scrollPosition, setScrollPosition] = useState(0)
 
+  const wrapper = useRef()
+
   useEffect(() => {
     const scrollEventHandler = () => {
-      const newPosition =
-        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      const newPosition = window.scrollY / (document.body.offsetHeight - window.innerHeight)
+      const offset = window.innerHeight - wrapper.current.getBoundingClientRect().y
+
+      if(offset > 0 && offset , window.innerHeight){
         setScrollPosition(newPosition)
+      }
     }
 
     window.addEventListener('scroll', scrollEventHandler)
@@ -21,7 +26,7 @@ function Carousel({ data, leftToRight = false, className = '' }) {
   }, [])
 
   return (
-    <div className={"" + className}>
+    <div ref={wrapper} className={"" + className}>
       <div
         className={
           leftToRight

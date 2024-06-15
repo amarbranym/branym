@@ -5,7 +5,7 @@ import WhoWeAre from '@/utils/components/ui/icons/WhoWeAre'
 import StrokeButton from '@/utils/components/ui/buttons/StrokeButton'
 import PlayIcon from '@/utils/components/ui/icons/PlayIcon'
 
-const Hero = () => {
+const PageHero = () => {
   return (
     <>
       <section className="hero_bg flex w-full overflow-hidden ">
@@ -29,7 +29,7 @@ const Hero = () => {
       <section className=" w-full pb-20  pt-10">
         <Container className="">
           <div className="   text-7xl font-semibold ">
-            <p className="text-center text-white font-calsans ">
+            <p className="text-center font-calsans text-white ">
               We are a design agency based in India. We’ve worked with 20+
               clients over 5 years and delivering{' '}
               <span className="text-[#FF720D]"> tailor-made solutions </span>{' '}
@@ -53,4 +53,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default PageHero

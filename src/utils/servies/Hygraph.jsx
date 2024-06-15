@@ -159,3 +159,25 @@ export const getBlog = async (slug) => {
   const result = await request(MASTER_URL, query)
   return result
 }
+export const getTeam = async () => {
+  const query = gql`
+    query Team {
+      teams {
+        name
+        id
+        description
+        designation
+        picture {
+          id
+          url
+        }
+        social {
+          link
+          platform
+        }
+      }
+    }
+  `
+  const result = await request(MASTER_URL, query)
+  return result
+}

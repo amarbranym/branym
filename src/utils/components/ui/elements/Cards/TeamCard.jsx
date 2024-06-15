@@ -1,13 +1,13 @@
 import React from 'react'
-import Yuvraj from '../../../../../images/Yuvraj.png'
 import Image from 'next/image'
+import Yuvraj from '@/images/yuvraj.png'
 import Linkdin from '../../icons/Social/Linkdin'
 import Instagram from '../../icons/Social/Instagram'
 import Twitter from '../../icons/Social/Twitter'
 
 const OwnerCard = () => {
   return (
-    <div className=" flex w-[48rem] items-center gap-6 rounded-xl border border-gray-100 p-4  ">
+    <div className="flex flex-col lg:flex-row lg:w-[48rem] items-center gap-6 rounded-xl border border-gray-100 p-4  ">
       <div className="  min-w-[20rem] ">
         <Image src={Yuvraj} alt="" className=" object-cover " />
       </div>
@@ -31,7 +31,7 @@ const OwnerCard = () => {
             csa
           </span>
         </div>
-        <div className="!leading-1 text-lg text-white">
+        <div className="!leading-tight text-lg text-white lg:pr-8">
           <p>
             Our team understand the needs and requirements of our customer and
             make technology to resolve the needs, with the best UX possible for
@@ -39,7 +39,7 @@ const OwnerCard = () => {
             technologies that maximises the business value.
           </p>
         </div>
-        <div className="flex h-4 gap-2">
+        <div className="flex gap-2">
           <Instagram />
           <Linkdin />
           <Twitter />
