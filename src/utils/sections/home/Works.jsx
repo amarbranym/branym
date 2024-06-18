@@ -1,13 +1,11 @@
+"use client"
 import React from 'react'
 import { Container } from '../../components/ui/elements/Container'
 import Card from '../../components/ui/elements/Cards/Card'
 import GradientLine from '../../components/ui/gradients/GradientLine'
 import HorizontalScrollCarousel from '../../components/ui/elements/HorizontalScrollCarousel'
-import MobileHorizontalScrollCarousel from '../../components/ui/elements/MobileHorizontalScrollCarousel'
-import { getWorkList } from '@/utils/servies/Hygraph'
 
-const Works = async () => {
-  const { works } = getWorkList()
+const Works = ({ works }) => {
   return (
     <section className="">
       <Container>
@@ -16,8 +14,8 @@ const Works = async () => {
         </div>
       </Container>
       <div className=" mt-14">
-        <HorizontalScrollCarousel data={[...Array(9)]}>
-          {() => <Card />}
+        <HorizontalScrollCarousel data={works}>
+          {(item, index) => <Card item={item} index={index} />}
         </HorizontalScrollCarousel>
       </div>
     </section>

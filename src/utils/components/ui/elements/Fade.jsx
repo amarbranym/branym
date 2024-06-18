@@ -9,7 +9,7 @@ const Fade = ({ children, ...props }) => {
     AOS.init({
       duration: 400,
       easing: 'ease-in-out',
-      // once: true,
+      once: true,
     })
     // AOS.refresh()
   }, [])

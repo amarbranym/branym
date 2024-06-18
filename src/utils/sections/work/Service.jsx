@@ -1,10 +1,11 @@
 import IconButton from '@/utils/components/ui/buttons/IconButton'
-import Badges from '@/utils/components/ui/elements/Badges'
+import Chip from '@/utils/components/ui/elements/Chip'
 import { Container } from '@/utils/components/ui/elements/Container'
 import Fade from '@/utils/components/ui/elements/Fade'
 import SearchIcon from '@/utils/components/ui/icons/SearchIcon'
+import Link from 'next/link'
 import React from 'react'
-
+const badgesData = ['All', 'Branding', 'Ui/UX Design', 'Media', 'Development']
 const Service = () => {
   return (
     <section>
@@ -34,30 +35,15 @@ const Service = () => {
               data-aos-delay="150"
               className="flex flex-wrap  items-center justify-center gap-2 "
             >
-              <Badges
-                className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
-                text="All"
-              />
-              <Badges
-                text="Branding"
-                color="#3100BB"
-                className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
-              />
-              <Badges
-                text="Ui/UX Design"
-                color="#3100BB"
-                className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
-              />
-              <Badges
-                text="Meida"
-                color="#3100BB"
-                className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
-              />
-              <Badges
-                text="Development"
-                color="#3100BB"
-                className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
-              />
+              {badgesData.map((value, index) => (
+                <Link passHref href="/all" legacyBehavior>
+                  <Chip
+                    className="  border border-gray-500 bg-gradient-to-r from-[#18181A] to-[#0F0F10]"
+                    text={value}
+                    key={index}
+                  />
+                </Link>
+              ))}
             </Fade>
           </div>
         </div>

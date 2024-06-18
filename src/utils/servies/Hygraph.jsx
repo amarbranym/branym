@@ -22,143 +22,37 @@ export const getClientList = async () => {
 }
 export const getWorkList = async () => {
   const query = gql`
-    query WorkList {
+    query getWorks {
       works {
+        id
+        slug
+        title
+        color {
+          css
+          hex
+        }
+        logo {
+          url
+          id
+        }
         client
-        createdAt
+        category
         description
+        coverImage {
+          url
+          id
+        }
+        services
+      }
+      works {
+        id
+      }
+    }
+  `
+  const result = await request(MASTER_URL, query)
+  return result
+}
 
-        id
-        slug
-        summary
-        title
-        updatedAt
-        services
-        featured
-        link
-        thumbnail {
-          id
-          url
-        }
-        coverImage {
-          url
-          id
-        }
-        clientImage {
-          id
-          url
-        }
-        month
-        year
-      }
-    }
-  `
-  const result = await request(MASTER_URL, query)
-  return result
-}
-export const getWork = async (slug) => {
-  const query =
-    gql`
-    query Works {
-      works(where: { slug: "` +
-    slug +
-    `" }) {
-        client
-        createdAt
-        description
-        id
-        publishedAt
-        markdata
-        summary
-        title
-        updatedAt
-        services
-        featured
-        link
-        thumbnail {
-          id
-          url
-        }
-        coverImage {
-          url
-          id
-        }
-        clientImage {
-          id
-          url
-        }
-        related {
-          client
-          featured
-          slug
-          title
-          summary
-          year
-          month
-          id
-          description
-        }
-        month
-        year
-      }
-    }
-  `
-  const result = await request(MASTER_URL, query)
-  return result
-}
-export const getBlogList = async (slug) => {
-  const query = gql`
-    query blogList {
-      blog {
-        description
-        slug
-        date
-        image {
-          id
-          url
-        }
-        markData
-        author {
-          designation
-          name
-          avatar {
-            id
-            url
-          }
-        }
-      }
-    }
-  `
-  const result = await request(MASTER_URL, query)
-  return result
-}
-export const getBlog = async (slug) => {
-  const query =
-    gql`
-  query Blog {
-    blog(where: {slug: "` +
-    slug +
-    `"}) {
-      author {
-        id
-        name
-        designation
-        avatar {
-          id
-          url
-        }
-      }
-      description
-      date
-      markData
-      title
-    }
-  }
-  
-  `
-  const result = await request(MASTER_URL, query)
-  return result
-}
 export const getTeam = async () => {
   const query = gql`
     query Team {

@@ -1,14 +1,10 @@
+'use client'
 import React from 'react'
 import { Container } from '@/utils/components/ui/elements/Container'
-import { getTeam } from '@/utils/servies/Hygraph'
 import HorizontalScrollCarousel from '@/utils/components/ui/elements/HorizontalScrollCarousel'
 import TeamCard from '@/utils/components/ui/elements/Cards/TeamCard'
-import TeamSlider from '@/utils/components/ui/elements/TeamSlider'
 
-const Team = async () => {
-  const { teams } = await getTeam();
-  console.log("tems", teams)
-
+const Team = ({ teams }) => {
   return (
     <section className="py-10">
       <Container>
@@ -17,7 +13,9 @@ const Team = async () => {
           <span className="text-[#F43636]"> awesomeness</span>
         </h3>
       </Container>
-      <TeamSlider teams={teams} />
+      <HorizontalScrollCarousel data={teams}>
+        {(item) => <TeamCard item={item} />}
+      </HorizontalScrollCarousel>
     </section>
   )
 }

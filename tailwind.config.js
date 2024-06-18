@@ -4,6 +4,12 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,mdx}'],
+  safelist: [
+    {
+      pattern: /bg-(purple|orange|yellow|blue|red)-(100|500|700)/, // You can display all the colors that you need
+      variants: ['lg', 'hover', 'focus', 'lg:hover'],      // Optional
+    },
+  ],
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

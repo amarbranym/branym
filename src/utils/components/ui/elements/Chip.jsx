@@ -1,10 +1,12 @@
+'use client'
 import clsx from 'clsx'
 import React from 'react'
 
-const Badges = ({ className, color, text }) => {
+const Chip = ({ className, color, text, index }) => {
   const bgcolor = `bg-[${color}]`
   return (
-    <span
+    <a
+      key={index}
       className={clsx(
         'inline-block cursor-pointer  rounded-xl px-3  py-1 text-sm font-extralight  text-white ',
         className,
@@ -12,8 +14,8 @@ const Badges = ({ className, color, text }) => {
       )}
     >
       {text}
-    </span>
+    </a>
   )
 }
 
-export default Badges
+export default Chip

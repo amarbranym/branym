@@ -16,7 +16,7 @@ const ReusableHero = ({ title, icon: IconComponent, children }) => {
           </h1>
         </Fade>
         <div className="absolute bottom-0 left-1/2 z-[10] -translate-x-1/2">
-          {IconComponent && <IconComponent className="w-screen scale-110" />}
+          {IconComponent && <IconComponent className="w-screen scale-100 " />}
         </div>
         <div className="absolute left-1/2 top-0 z-[15] -translate-x-1/2 rotate-180 transform object-cover">
           <BlueGradient />

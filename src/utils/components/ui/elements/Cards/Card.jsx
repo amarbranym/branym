@@ -1,51 +1,49 @@
+'use client'
 import React from 'react'
 import luxpackerLogo from '@/images/slider/luxpackerslogo.png'
 import luxpackerThumbnail from '@/images/slider/luxpackersthumbnail.png'
 import Image from 'next/image'
 import CurvedTextButton from '../CurvedTextButton'
 import DownArrow from '../../icons/DownArrow'
-const Card = () => {
+import Badge from '../Badge'
+const Card = ({ item, index }) => {
   return (
-    <div className="max-w-2xl overflow-hidden  rounded-2xl border-[0.5px]   border-gray-500 sm:w-[26rem] lg:w-[30rem] xl:w-[35rem] ">
-      <div className="cardGradient w-full ">
-        <div className="flex w-full items-center justify-center px-4 py-6 lg:px-0 lg:py-16">
-          <Image
-            src={luxpackerLogo}
+    <div
+      key={item?.id}
+      className="sm:min-w-screen cursor-pointer group max-w-2xl overflow-hidden rounded-2xl border-[0.5px]   border-gray-500 sm:w-auto lg:w-[30rem] xl:w-[35rem] "
+    >
+      <div className="w-full relative overflow-hidden"> 
+        <div 
+          className='absolute top-[-50%] scale-[0.8] brightness-[1.3] opacity-30 group-hover:scale-[1.8] group-hover:opacty-100 left-0 right-0 bottom-0 w-full h-full transition duration-[500ms]' 
+          style={{background: `radial-gradient(${item?.color?.hex}, ${item?.color?.hex}00 80%)`,}}
+        ></div>
+        <div className="relative flex h-[160px] items-center transition group-hover:scale-[1.05] justify-center">
+          <img
+            src={item?.logo?.url}
             alt="logo"
-            className=" max-w-64 scale-50 lg:scale-75"
+            className="max-h-[56px] w-full max-w-[256px] object-contain brightness-[50]"
           />
         </div>
-        <div className="w-full object-contain px-4 md:px-8   ">
-          <Image
-            src={luxpackerThumbnail}
-            alt=""
-            className="m-auto h-[150px] w-full rounded-t-sm lg:h-full "
-          />
+        <div className="relative max-h-[300px] px-[5%] transition translate-y-[16px] group-hover:translate-y-[0px]">
+          <img src={item?.coverImage?.url} alt="" className="h-full w-full" />
         </div>
       </div>
       <div className="bg-gradient-to-r from-[#18181A] to-[#0F0F10] p-4  md:p-8">
-        <div className=" flex flex-wrap gap-2">
-          <span class=" inline-block rounded-lg bg-[#3100BB] px-2  text-sm font-extralight uppercase text-white ">
-            ui/ux design
-          </span>
-          <span class=" inline-block rounded-lg bg-[#C25A0F] px-2  text-sm font-extralight uppercase text-white ">
-            Motain design
-          </span>
-          <span class=" inline-block rounded-lg bg-[#1F9B94] px-2  text-sm font-extralight uppercase text-white ">
-            graphic design
-          </span>
+        <div className="flex flex-wrap gap-2">
+          {item?.services.map((value, index) => (
+            <Badge text={value} key={index} />
+          ))}
         </div>
         <div className=" mt-3 text-white">
-          <p className=" text-sm font-light lg:text-lg">
-            A short description explaining the solution for a pain point related
-            to QSR . Ideally this will be an animated event. The next options
-            are hidden until it scrolls through, or someone scrolls over the
-            headline.
+          <p className=" line-clamp-3 text-sm font-light lg:text-lg">
+            {item.description}
           </p>
         </div>
-        <div className=" flex items-center justify-between gap-2 lg:my-4">
+        <div className=" flex items-center justify-between gap-2 lg:mt-6">
           <div className="flex h-[100px]  items-center justify-start ">
-            <h2 className="font-Chloe text-7xl font-bold text-white ">01</h2>
+            <h2 className="font-Chloe text-7xl font-bold text-white ">
+              {index > 9 ? index : `0${index + 1}`}
+            </h2>
           </div>
           <div className=" w-[60%]">
             <hr />

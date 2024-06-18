@@ -1,17 +1,20 @@
 import Client from '@/utils/sections/about/Client'
-import HeroVideo from '@/utils/sections/about/HeroVideo'
+import Video from '@/utils/sections/about/Video'
 import PageHero from '@/utils/sections/about/PageHero'
 import Skills from '@/utils/sections/about/Skills'
 import Team from '@/utils/sections/about/Team'
 import React from 'react'
+import { getTeam } from '@/utils/servies/Hygraph'
 
-const page = () => {
+const page = async () => {
+  const { teams } = await getTeam()
+
   return (
     <>
       <PageHero />
-      <HeroVideo/>
+      <Video />
       <Skills />
-      <Team />
+      <Team teams={teams} />
       <Client />
     </>
   )

@@ -4,14 +4,16 @@ import About from '@/utils/sections/home/About'
 import Skill from '@/utils/sections/home/Skill'
 import Works from '@/utils/sections/home/Works'
 import Client from '@/utils/sections/home/Client'
+import { getWorkList } from '@/utils/servies/Hygraph'
 
-const page = () => {
+const page = async () => {
+  const { works } = await getWorkList()
   return (
     <>
       <Hero />
       <About />
       <Skill />
-      <Works />
+      <Works works={works} />
       <Client />
     </>
   )
