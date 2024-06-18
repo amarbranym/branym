@@ -5,39 +5,36 @@ import Linkdin from '../../icons/Social/Linkdin'
 import Instagram from '../../icons/Social/Instagram'
 import Twitter from '../../icons/Social/Twitter'
 
-const OwnerCard = () => {
+const TeamCard = ({ item }) => {
+  const bgColor = ['#999999', '#BD1784', '#3100BB', '#F43636', '#FFAE33']
   return (
-    <div className="flex flex-col lg:flex-row lg:w-[48rem] items-center gap-6 rounded-xl border border-gray-100 p-4  ">
-      <div className="  min-w-[20rem] ">
-        <Image src={Yuvraj} alt="" className=" object-cover " />
+    <div
+      key={item?.id}
+      className="flex flex-col items-center gap-6 rounded-xl border border-gray-100 p-4 sm:flex-row lg:w-[48rem]  "
+    >
+      <div className="  h-[409px] min-w-[20rem]  rounded-md  ">
+        <img
+          src={item?.picture?.url}
+          alt=""
+          className=" h-full  w-full rounded-md  object-cover "
+          // width={300}
+          // height={500}
+        />
       </div>
 
       <div className="flex flex-col gap-4  ">
-        <h4 className="font-calsans text-4xl text-white">Yuvraj Midha</h4>
+        <h4 className="font-calsans text-4xl text-white">{item?.name}</h4>
         <div className="flex flex-wrap gap-2 ">
-          <span class=" inline-block rounded-lg bg-[#999999] px-2  text-sm font-extralight uppercase text-white ">
-            ceo
-          </span>
-          <span class=" inline-block rounded-lg bg-[#BD1784] px-2  text-sm font-extralight uppercase text-white ">
-            co-founder
-          </span>
-          <span class=" inline-block rounded-lg bg-[#3100BB] px-2  text-sm font-extralight uppercase text-white ">
-            design lead
-          </span>
-          <span class=" inline-block rounded-lg bg-[#F43636] px-2  text-sm font-extralight uppercase text-white ">
-            frontend specialist
-          </span>
-          <span class=" inline-block rounded-lg bg-[#FFAE33] px-2  text-sm font-extralight uppercase text-white ">
-            csa
-          </span>
+          {item.designation.map((value, index) => (
+            <span
+              className={` inline-block rounded-lg bg-[${bgColor[index]}] px-2  text-sm font-extralight uppercase text-white `}
+            >
+              {value}
+            </span>
+          ))}
         </div>
-        <div className="!leading-tight text-lg text-white lg:pr-8">
-          <p>
-            Our team understand the needs and requirements of our customer and
-            make technology to resolve the needs, with the best UX possible for
-            the target audience. We believe to explore new opportunities and
-            technologies that maximises the business value.
-          </p>
+        <div className="text-lg !leading-tight text-white lg:pr-8">
+          <p>{item.description}</p>
         </div>
         <div className="flex gap-2">
           <Instagram />
@@ -49,4 +46,4 @@ const OwnerCard = () => {
   )
 }
 
-export default OwnerCard
+export default TeamCard

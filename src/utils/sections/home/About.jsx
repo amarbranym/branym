@@ -1,22 +1,12 @@
 import React from 'react'
-import Carousel from '../../components/ui/elements/Carousel'
-import { CarouselText, CarouselText2 } from '@/data/imageData'
 import { Container } from '../../components/ui/elements/Container'
 import ArrowIcon from '../../components/ui/icons/ArrowIcon'
 import Fade from '../../components/ui/elements/Fade'
+import InfiniteCarousel from '../../components/ui/elements/Carousel'
 const About = () => {
-  return (  
+  return (
     <div className="about w-full overflow-hidden ">
-      <div className="mx-auto flex justify-center">
-        <div className="mt-2 lg:mt-6">
-          <div>
-            <Carousel data={CarouselText} />
-          </div>
-          <div className="lg:mt-6">
-            <Carousel data={CarouselText2} leftToRight={true} />
-          </div>
-        </div>
-      </div>
+      <InfiniteCarousel />
       <Container className="py-12">
         <div className="grid grid-cols-2 gap-3 font-calsans sm:gap-4 md:grid-cols-8">
           <Fade

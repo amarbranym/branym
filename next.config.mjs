@@ -14,7 +14,11 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['jsx', 'mdx'],
+  images: {
+    domains: ['ap-south-1.graphassets.com', /* other domains if any */],
+  },
 }
+
 
 function remarkMDXLayout(source) {
   let parser = Parser.extend(jsx())

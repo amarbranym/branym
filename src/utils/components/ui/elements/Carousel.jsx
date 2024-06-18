@@ -2,20 +2,17 @@
 
 import { useEffect, useState, useRef } from 'react'
 import '@/styles/carousel.css'
+import { CarouselText, CarouselText2 } from '@/data/imageData'
 
 function Carousel({ data, leftToRight = false, className = '' }) {
   const [scrollPosition, setScrollPosition] = useState(0)
-
   const wrapper = useRef()
 
   useEffect(() => {
     const scrollEventHandler = () => {
-      const newPosition = window.scrollY / (document.body.offsetHeight - window.innerHeight)
-      const offset = window.innerHeight - wrapper.current.getBoundingClientRect().y
-
-      if(offset > 0 && offset , window.innerHeight){
-        setScrollPosition(newPosition)
-      }
+      const newPosition =
+        window.scrollY / (document.body.offsetHeight - window.innerHeight)
+      setScrollPosition(newPosition)
     }
 
     window.addEventListener('scroll', scrollEventHandler)
@@ -26,21 +23,21 @@ function Carousel({ data, leftToRight = false, className = '' }) {
   }, [])
 
   return (
-    <div ref={wrapper} className={"" + className}>
+    <div ref={wrapper} className={className}>
       <div
-        className={
-          leftToRight
-            ? 'slide-track-left  text-white'
-            : 'slide-track  text-white'
-        }
+        className={`${
+          leftToRight ? 'slide-track-left' : 'slide-track'
+        } text-white`}
         style={{
-          '--scroll': scrollPosition * 5,
+          transform: leftToRight
+            ? `translateX(calc(${scrollPosition} * 70%))`
+            : `translateX(calc(${scrollPosition} * -70%))`,
         }}
       >
-        {data.map((item) => (
-          <div class="slide p-2 md:p-4">
+        {data.map((item, index) => (
+          <div key={index} className="slide p-2 md:p-4">
             <h2
-              className={`font-calsans text-[40px] md:text-[80px] font-extrabold uppercase ${item.css} `}
+              className={`font-calsans text-[40px] font-extrabold uppercase md:text-[80px] ${item.css}`}
             >
               {item.text}
             </h2>
@@ -51,4 +48,19 @@ function Carousel({ data, leftToRight = false, className = '' }) {
   )
 }
 
-export default Carousel
+const InfiniteCarousel = () => {
+  return (
+    <div className="  mx-auto flex justify-center">
+      <div className="  mt-2 lg:mt-4">
+        <div>
+          <Carousel data={CarouselText} />
+        </div>
+        <div className=" mt-2 sm:mt-4">
+          <Carousel data={CarouselText2} leftToRight={true} />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default InfiniteCarousel

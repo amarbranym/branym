@@ -1,71 +1,13 @@
-/* 
-
-.slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 10);
-}
- */
-@keyframes scroll-left {
-    0% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes scroll-right {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .slide-track {
-    /* animation: none; */
-    /* Animation will be applied dynamically */
+
     display: flex;
-    /* overflow: hidden; */
     white-space: nowrap;
-    /* Ensure text doesn't wrap */
-    width: 200vw;
-    animation: scroll 40s linear infinite;
+    width: 300vw;
 }
 
 .slide-track-left {
-    /* animation: none; */
-    /* Animation will be applied dynamically */
+
     display: flex;
-    /* overflow: hidden; */
     white-space: nowrap;
-    /* Ensure text doesn't wrap */
     width: 200vw;
-    animation: leftScroll 40s linear infinite;
-}
-
-/* Animation based on scroll position */
-@keyframes scroll {
-    0% {
-        transform: translateX(calc(-300px * var(--scroll)));
-    }
-
-    100% {
-        transform: translateX(calc(-300px * var(--scroll)));
-    }
-}
-
-/* Animation based on scroll position */
-@keyframes leftScroll {
-    0% {
-        transform: translateX(calc(300px * var(--scroll)));
-    }
-
-    100% {
-        transform: translateX(calc(300px * var(--scroll)));
-    }
 }

@@ -2,17 +2,17 @@ import React from 'react'
 import Hero from '@/utils/sections/home/Hero'
 import About from '@/utils/sections/home/About'
 import Skill from '@/utils/sections/home/Skill'
-import Projects from '@/utils/sections/home/Projects'
-import Work from '@/utils/sections/home/Work'
+import Works from '@/utils/sections/home/Works'
+import Client from '@/utils/sections/home/Client'
 
 const page = () => {
   return (
     <>
       <Hero />
-      <About/>
-      <Skill/>
-      <Projects/>
-      <Work/>
+      <About />
+      <Skill />
+      <Works />
+      <Client />
     </>
   )
 }

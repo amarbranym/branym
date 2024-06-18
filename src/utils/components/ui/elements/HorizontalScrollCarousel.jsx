@@ -98,9 +98,9 @@ const HorizontalScrollCarousel = ({ children = () => {}, data = [] }) => {
       >
         <div
           ref={scrollerRef}
-          className="scrollbar-hide lg:overflow-x-scroll"
+          className="scrollbar-hide sm:overflow-x-scroll"
         >
-          <div className="flex flex-wrap gap-y-4 lg:flex-nowrap items-center lg:px-3">
+          <div className="flex flex-wrap gap-y-4 sm:flex-nowrap items-center lg:px-3">
             <div className="one-side-width h-4"></div>
             {data.map((item, index) => (
               <div id={'work-wrapper-' + index}>
@@ -114,7 +114,7 @@ const HorizontalScrollCarousel = ({ children = () => {}, data = [] }) => {
           </div>
         </div>
       </div>
-      <div className='hidden lg:block' style={{ height: `calc((${w}px * ${data.length}) - 1136px + ${headerStart}px)` }}></div>
+      <div className='hidden sm:block' style={{ height: `calc((${w}px * ${data.length}) - 1136px + ${headerStart}px)` }}></div>
     </>
   )
 }

@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
-        <ContactRootLayout >{children}</ContactRootLayout>
+        <ContactRootLayout>{children}</ContactRootLayout>
         <Analytics />
       </body>
     </html>

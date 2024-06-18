@@ -2,7 +2,7 @@ import BlueGradient from '@/utils/components/ui/gradients/BlueGradient'
 import LetsTalkIcon from '@/utils/components/ui/icons/LetsTalkIcon'
 import React from 'react'
 
-const Hero = () => {
+const PageHero = () => {
   return (
     <section className="hero_bg flex w-full overflow-hidden ">
       <div className="relative w-full">
@@ -24,4 +24,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default PageHero
